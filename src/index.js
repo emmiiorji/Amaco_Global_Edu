@@ -89,20 +89,20 @@ const navigatePages = () => {
 		navList.addEventListener('click', e => {
 			const list = e.target.id
 			const activeSection = document.querySelector(`.${list}`)
-			const navList = document.querySelectorAll('.list i')
+			const navList = document.querySelectorAll('.list')
 			const activeList = document.querySelector(`#${list}`)
 
-			document.querySelectorAll('section').forEach(section => {
+			document.querySelectorAll('.section').forEach(section => {
 				section.style.display = 'none'
 				let { className } = section
-				if (className === list) {
+        if (className === list) {
+          activeSection.style.display = 'block'
 					navList.forEach(list => {
 						list.style.color = '#ce6a10'
 					})
 					activeList.style.color = 'white'
 				}
 			})
-			activeSection.style.display = 'block'
 		})
 	})
 }
