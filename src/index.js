@@ -1,20 +1,11 @@
 import './style.css'
 
 const createImages = async () => {
-	const datas = await userServices.getUser()
-	const profilePic = datas.profilePicture
 
 	const logo = document.createElement('img')
 	logo.setAttribute('src', logoIcon)
 	document.querySelector('.main-header-logo').appendChild(logo)
 
-	const title = document.createElement('img')
-	title.setAttribute('src', `${profilePic || avatarIcon}`)
-	document.querySelector('.main-header-avatar').appendChild(title)
-
-	const navProfile = document.createElement('img')
-	navProfile.setAttribute('src', `${profilePic || avatarIcon}`)
-	document.querySelector('#nav-profile').appendChild(navProfile)
 }
 
 createImages()
