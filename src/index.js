@@ -5,7 +5,6 @@ const createImages = async () => {
 	const logo = document.createElement('img')
 	logo.setAttribute('src', logoIcon)
 	document.querySelector('.main-header-logo').appendChild(logo)
-
 }
 
 createImages()
@@ -50,18 +49,6 @@ const closeModal = () => {
 				modal.style.display = 'none'
 			})
 		})
-	})
-
-	document.querySelectorAll('.cancelled').forEach(close => {
-		close.addEventListener('click', () => {
-			document.querySelectorAll('.modal-popups').forEach(modal => {
-				modal.style.display = 'none'
-			})
-		})
-	})
-
-	document.querySelector('#close-recovery').addEventListener('click', () => {
-		document.querySelector('.modals').style.display = 'none'
 	})
 }
 closeModal()
