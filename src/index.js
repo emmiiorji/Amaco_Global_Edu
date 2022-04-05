@@ -1,10 +1,11 @@
 import './style.css'
+import logoIcon from './assets/img/amaco-logo1.jpg'
 
 const createImages = async () => {
 
 	const logo = document.createElement('img')
 	logo.setAttribute('src', logoIcon)
-	document.querySelector('.main-header-logo').appendChild(logo)
+	document.querySelector('.logo-wrapper').appendChild(logo)
 }
 
 createImages()
