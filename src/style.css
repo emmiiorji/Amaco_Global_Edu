@@ -185,6 +185,11 @@ button {
 	margin: 80px auto;
 }
 
+.about-section h1 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
 .about-desc .text {
 	color: var(--thin-dark);
 	line-height: 28px;
