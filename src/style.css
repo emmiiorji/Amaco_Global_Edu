@@ -163,7 +163,7 @@ header {
 	margin: 15px 0;
 }
 
-button {
+.button {
 	padding: 15px 25px;
 	margin: 15px 0;
 	border: none;
@@ -202,6 +202,58 @@ button {
 	align-items: center;
 	gap: 10px;
 	margin-bottom: 15px;
+}
+
+/* service section starts here */
+.services-section {
+	width: 90%;
+	margin: 50px auto;
+}
+
+.services-section h1 {
+	font-size: 3rem;
+	text-align: center;
+}
+
+.services-section p {
+	color: var(--thin-dark);
+	text-align: center;
+}
+
+.service-lists {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.service {
+	flex: 1;
+}
+
+.service h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.service p {
+	font-size: 0.9rem;
+	line-height: 24px;
+}
+
+.read {
+	background: none;
+	border: none;
+	outline: none;
+	text-align: center;
+	width: 100%;
+	margin: 20px 0;
+	color: var(--navy-blue);
+	display: block;
 }
 
 @media only screen and (min-width: 880px) {
@@ -305,5 +357,11 @@ button {
 
 	.about-img {
 		flex: 80%;
+	}
+
+	/* service section starts here */
+
+	.service-lists {
+		flex-direction: row;
 	}
 }

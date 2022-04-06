@@ -2,6 +2,7 @@ import './style.css'
 import interSectionObserver from './animation.js'
 import logoIcon from './assets/img/amaco-logo1.jpg'
 import aboutIcon from './assets/img/amaco-logo2.png'
+import serviceIcon from './assets/img/bgtwo.jpg'
 
 
 interSectionObserver()
@@ -14,6 +15,10 @@ const createImages = async () => {
 	const about = document.createElement('img')
 	about.setAttribute('src', aboutIcon)
 	document.querySelector('.about-img').appendChild(about)
+
+	const service = document.createElement('img')
+	service.setAttribute('src', serviceIcon)
+	document.querySelector('.about-img').appendChild(service)
 }
 
 createImages()
