@@ -174,6 +174,11 @@ header {
 	border-radius: 10px;
 }
 
+.button:hover {
+  background-color: var(--white);
+	color: var(--navy-blue);
+	border: 2px solid var(--navy-blue);
+}
 /* about section styling starts here */
 
 .about-section {
@@ -205,32 +210,33 @@ header {
 }
 
 /* service section starts here */
-.services-section {
-	width: 90%;
+.services-section, .universities-section {
+	width: 80%;
 	margin: 50px auto;
 }
 
-.services-section h1 {
+.services-section h1, .universities-section h1{
 	font-size: 3rem;
 	text-align: center;
 }
 
-.services-section p {
+.services-section p, .universities-section p {
 	color: var(--thin-dark);
+	font-weight: 300;
 	text-align: center;
 }
 
 .service-lists {
 	margin-top: 40px;
-	display: flex;
-	justify-content: space-between;
-	gap: 40px;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 
 .service {
 	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 20px;
 }
 
 .service h2 {
@@ -245,6 +251,12 @@ header {
 	line-height: 24px;
 }
 
+.service i {
+margin-bottom: 15px;
+	font-size: 2rem;
+	color: var(--navy-blue);
+}
+
 .read {
 	background: none;
 	border: none;
@@ -254,7 +266,10 @@ header {
 	margin: 20px 0;
 	color: var(--navy-blue);
 	display: block;
+	cursor: pointer;
+	font-size: 1rem;
 }
+
 
 @media only screen and (min-width: 880px) {
 	/* header desktop view styling start here */
@@ -356,12 +371,29 @@ header {
 	}
 
 	.about-img {
-		flex: 80%;
+		flex: 100%;
 	}
 
 	/* service section starts here */
 
-	.service-lists {
+	.service-container {
 		flex-direction: row;
 	}
+
+	.service-lists {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 40px;
+}
+
+/* universities section styling starts here */
+
+.university-lists {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: row;
+	gap: 30px;
+	margin-top: 50px;
+}
 }

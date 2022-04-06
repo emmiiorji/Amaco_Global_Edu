@@ -1,4 +1,5 @@
 import './style.css'
+import renderUniversities from './'
 import interSectionObserver from './animation.js'
 import logoIcon from './assets/img/amaco-logo1.jpg'
 import aboutIcon from './assets/img/amaco-logo2.png'
@@ -16,9 +17,6 @@ const createImages = async () => {
 	about.setAttribute('src', aboutIcon)
 	document.querySelector('.about-img').appendChild(about)
 
-	const service = document.createElement('img')
-	service.setAttribute('src', serviceIcon)
-	document.querySelector('.about-img').appendChild(service)
 }
 
 createImages()
