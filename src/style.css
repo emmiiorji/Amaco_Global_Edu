@@ -434,7 +434,7 @@ footer {
 }
 
 .about-page-desc {
-	margin: 50px auto;
+	margin: 60px auto;
 	width: 90%;
 }
 
@@ -454,6 +454,7 @@ footer {
 .about p {
 	color: var(--thin-dark);
 	padding: 20px 0;
+	line-height: 24px;
 }
 
 .our-history,
@@ -621,11 +622,16 @@ footer {
 		font-size: 4rem;
 	}
 	.our-history,
-	.drive,
-	.our-vision,
-	.page-desc {
+	.our-drive,
+	.our-vision {
 		display: flex;
 		justify-content: space-between;
-		gap: 30px;
+		gap: 50px;
+		margin: 80px auto;
+	}
+  
+	.our-history-img,
+	.our-mission-img {
+		flex: 100%;
 	}
 }

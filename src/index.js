@@ -20,12 +20,8 @@ const createImages = async () => {
 	about.setAttribute('src', aboutIcon)
 	document.querySelector('.about-img').appendChild(about)
 
-	const aboutIntro = document.createElement('img')
-	aboutIntro.setAttribute('src', aboutIntroIcon)
-	document.querySelector('.history-img').appendChild(aboutIntro)
-
 	const history = document.createElement('img')
-	history.setAttribute('src', historyIcon)
+	history.setAttribute('src', aboutIntroIcon)
 	document.querySelector('.our-history-img').appendChild(history)
 
 	const drive = document.createElement('img')
