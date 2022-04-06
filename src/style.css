@@ -313,17 +313,24 @@ header {
 .newsletter h1 {
 	font-size: 2rem;
 	text-align: center;
+	color: var(--white);
+}
+
+.newsletter p {
+	color: var(--white);
 }
 
 .newsletter form {
+	margin-top: 30px;
 	background-color: var(--faded-blue);
 	padding: 50px;
 	display: flex;
+	flex-direction: column;
 }
 
 .newsletter form input {
 	padding: 10px;
-	margin-right: 10px;
+	margin-bottom: 10px;
 	outline: none;
 	border-radius: 5px;
 	border: none;
@@ -336,6 +343,11 @@ header {
 	border: none;
 	background-color: var(--navy-blue);
 	padding: 10px 20px;
+	color: var(--white);
+}
+
+.newsletter form button:hover {
+	background-color: var(--sky-blue);
 }
 
 /* contact section styling starts here */
@@ -499,5 +511,14 @@ header {
 	.footer-container {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.newsletter form {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.newsletter form button {
+		padding: 0 20px;
 	}
 }
