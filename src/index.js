@@ -1,6 +1,7 @@
 import './style.css'
 import interSectionObserver from './animation.js'
 import logoIcon from './assets/img/amaco-logo1.jpg'
+import aboutIcon from './assets/img/amaco-logo2.png'
 
 
 interSectionObserver()
@@ -9,6 +10,10 @@ const createImages = async () => {
 	const logo = document.createElement('img')
 	logo.setAttribute('src', logoIcon)
 	document.querySelector('.logo-wrapper').appendChild(logo)
+
+	const about = document.createElement('img')
+	about.setAttribute('src', aboutIcon)
+	document.querySelector('.about-img').appendChild(about)
 }
 
 createImages()

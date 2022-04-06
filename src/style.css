@@ -21,7 +21,7 @@
 
 html {
 	font-size: 16px;
-	font-family: 'poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 }
@@ -160,10 +160,10 @@ header {
 .intro p {
 	color: var(--white);
 	font-size: 1.2rem;
-		margin: 15px 0;
+	margin: 15px 0;
 }
 
-.intro button {
+button {
 	padding: 15px 25px;
 	margin: 15px 0;
 	border: none;
@@ -172,6 +172,31 @@ header {
 	color: var(--white);
 	cursor: pointer;
 	border-radius: 10px;
+}
+
+/* about section styling starts here */
+
+.about-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-direction: column;
+	width: 90%;
+	margin: 80px auto;
+}
+
+.about-desc .text {
+	color: var(--thin-dark);
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.checkbox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
 }
 
 @media only screen and (min-width: 880px) {
@@ -262,7 +287,18 @@ header {
 		padding: 0 8%;
 	}
 
-.intro h1 {
-	width: 50%;
-}
+	.intro h1 {
+		width: 50%;
+	}
+
+	/* about section styling starts here */
+
+	.about-section {
+		flex-direction: row;
+		gap: 100px;
+	}
+
+	.about-img {
+		flex: 80%;
+	}
 }
