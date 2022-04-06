@@ -279,6 +279,12 @@ header {
 .university {
 	box-shadow: 2px 2px 2px 2px rgb(238, 245, 253);
 	margin-bottom: 20px;
+	transition: all 2s ease;
+}
+
+.university:hover {
+	box-shadow: 5px 5px 10px 10px rgb(238, 245, 253);
+	transform: scale(1.05);
 }
 
 .university h2 {
@@ -298,14 +304,17 @@ header {
 }
 
 /* newsletter styling starts here */
+
 .newsletter {
 	background-color: var(--sky-blue);
 	padding: 20px 10%;
 }
+
 .newsletter h1 {
 	font-size: 2rem;
 	text-align: center;
 }
+
 .newsletter form {
 	background-color: var(--faded-blue);
 	padding: 50px;
