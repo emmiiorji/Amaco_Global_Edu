@@ -2,11 +2,12 @@
 	/* primary colors */
 	--black: #000;
 	--white: #fff;
-	--deep-brown: #373928;
+	--faded-blue: #005a86;
 	--gray: #d3d3d3;
 	--navy-blue: #022b5d;
 	--thin-dark: #2b2b2b;
-	--red: red;
+	--dark: #333333;
+	--sky-blue: #0095df;
 }
 
 /* global styling  */
@@ -175,7 +176,7 @@ header {
 }
 
 .button:hover {
-  background-color: var(--white);
+	background-color: var(--white);
 	color: var(--navy-blue);
 	border: 2px solid var(--navy-blue);
 }
@@ -210,17 +211,21 @@ header {
 }
 
 /* service section starts here */
-.services-section, .universities-section {
+.services-section,
+.universities-section {
 	width: 80%;
 	margin: 50px auto;
 }
 
-.services-section h1, .universities-section h1{
+.services-section h1,
+.universities-section h1 {
 	font-size: 3rem;
 	text-align: center;
 }
 
-.services-section p, .universities-section p {
+.services-section p,
+.universities-section p,
+.newsletter p {
 	color: var(--thin-dark);
 	font-weight: 300;
 	text-align: center;
@@ -252,7 +257,7 @@ header {
 }
 
 .service i {
-margin-bottom: 15px;
+	margin-bottom: 15px;
 	font-size: 2rem;
 	color: var(--navy-blue);
 }
@@ -270,6 +275,91 @@ margin-bottom: 15px;
 	font-size: 1rem;
 }
 
+/* universities section styling starts here */
+.university {
+	box-shadow: 2px 2px 2px 2px rgb(238, 245, 253);
+	margin-bottom: 20px;
+}
+
+.university h2 {
+	font-size: 1.2rem;
+	padding: 10px;
+	text-align: center;
+}
+
+.university p {
+	font-size: 0.8rem;
+	padding: 10px;
+	color: var(--thin-dark);
+}
+
+.university img {
+	height: 150px;
+}
+
+/* newsletter styling starts here */
+.newsletter {
+	background-color: var(--sky-blue);
+	padding: 20px 10%;
+}
+.newsletter h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+.newsletter form {
+	background-color: var(--faded-blue);
+	padding: 50px;
+	display: flex;
+}
+
+.newsletter form input {
+	padding: 10px;
+	margin-right: 10px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	flex: 1;
+	background: var(--white);
+}
+
+.newsletter form button {
+	outline: none;
+	border: none;
+	background-color: var(--navy-blue);
+	padding: 10px 20px;
+}
+
+/* contact section styling starts here */
+
+.contact-section {
+	background-color: var(--dark);
+	padding: 20px;
+}
+
+.footer-container h2 {
+	color: var(--white);
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.footer-container ul li {
+	list-style-type: none;
+	padding: 10px 0;
+	color: var(--orange);
+}
+
+.link-icons {
+	display: flex;
+	gap: 15px;
+}
+
+.footer-container ul li a {
+	color: var(--white);
+}
 
 @media only screen and (min-width: 880px) {
 	/* header desktop view styling start here */
@@ -381,19 +471,24 @@ margin-bottom: 15px;
 	}
 
 	.service-lists {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 40px;
-}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 40px;
+	}
 
-/* universities section styling starts here */
+	/* universities section styling starts here */
 
-.university-lists {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-flow: row;
-	gap: 30px;
-	margin-top: 50px;
-}
+	.university-lists {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-auto-flow: row;
+		gap: 30px;
+		margin-top: 50px;
+	}
+
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+	}
 }
