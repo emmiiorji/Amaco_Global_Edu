@@ -26,15 +26,15 @@ const createImages = async () => {
 
 	const history = document.createElement('img')
 	history.setAttribute('src', historyIcon)
-	document.querySelector('.about-img').appendChild(history)
+	document.querySelector('.our-history-img').appendChild(history)
 
 	const drive = document.createElement('img')
 	drive.setAttribute('src', missionIcon)
-	document.querySelector('.about-img').appendChild(drive)
+	document.querySelector('.our-mission-img').appendChild(drive)
 
 	const vision = document.createElement('img')
 	vision.setAttribute('src', visionIcon)
-	document.querySelector('.about-img').appendChild(vision)
+	document.querySelector('.our-vision-img').appendChild(vision)
 }
 
 createImages()
