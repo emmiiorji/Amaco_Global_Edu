@@ -3,8 +3,10 @@ import renderUniversities from './universities'
 import interSectionObserver from './animation.js'
 import logoIcon from './assets/img/amaco-logo1.jpg'
 import aboutIcon from './assets/img/amaco-logo2.png'
-
-
+import aboutIntroIcon from './assets/img/our-history.jpg'
+import historyIcon from './assets/img/history.jpg'
+import missionIcon from './assets/img/mission.jpg'
+import visionIcon from './assets/img/vision.jpg'
 
 interSectionObserver()
 renderUniversities()
@@ -18,6 +20,17 @@ const createImages = async () => {
 	about.setAttribute('src', aboutIcon)
 	document.querySelector('.about-img').appendChild(about)
 
+	const history = document.createElement('img')
+	history.setAttribute('src', aboutIntroIcon)
+	document.querySelector('.our-history-img').appendChild(history)
+
+	const drive = document.createElement('img')
+	drive.setAttribute('src', missionIcon)
+	document.querySelector('.our-mission-img').appendChild(drive)
+
+	const vision = document.createElement('img')
+	vision.setAttribute('src', visionIcon)
+	document.querySelector('.our-vision-img').appendChild(vision)
 }
 
 createImages()
@@ -88,7 +101,7 @@ const navigatePages = () => {
 				let { className } = section
 				className = className.split(' ')[1]
 				if (className === list) {
-          activeSection.style.display = 'block'
+					activeSection.style.display = 'block'
 				}
 			})
 		})
