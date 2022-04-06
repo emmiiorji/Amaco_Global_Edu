@@ -70,7 +70,7 @@ const showHomePage = () => {
 	document.querySelectorAll('.section').forEach(section => {
 		section.style.display = 'none'
 	})
-	document.querySelector('main').style.display = 'block'
+	document.querySelector('.home').style.display = 'block'
 }
 
 showHomePage()
@@ -86,12 +86,9 @@ const navigatePages = () => {
 			document.querySelectorAll('.section').forEach(section => {
 				section.style.display = 'none'
 				let { className } = section
-        if (className === list) {
+				className = className.split(' ')[1]
+				if (className === list) {
           activeSection.style.display = 'block'
-					navList.forEach(list => {
-						list.style.color = '#ce6a10'
-					})
-					activeList.style.color = 'white'
 				}
 			})
 		})
