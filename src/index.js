@@ -48,6 +48,7 @@ toggleMenu()
 
 const openModal = () => {
 	const modalButtons = Array.from(document.querySelectorAll('.university'))
+	console.log(modalButtons)
 	const modals = Array.from(document.querySelectorAll('.modal'))
 
 
