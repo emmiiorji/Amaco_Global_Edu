@@ -88,6 +88,19 @@ const showHomePage = () => {
 
 showHomePage()
 
+const showAboutPage = () => {
+	document.querySelector('#show-more').addEventListener('click', () => {
+      	document.querySelectorAll('.section').forEach(section => {
+					section.style.display = 'none'
+				})
+				document.querySelector('.about').style.display = 'block'
+	})
+
+}
+
+showAboutPage()
+
+
 const navigatePages = () => {
 	document.querySelectorAll('.list').forEach(navList => {
 		navList.addEventListener('click', e => {
