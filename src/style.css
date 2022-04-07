@@ -421,7 +421,8 @@ footer {
 	flex-direction: column;
 }
 
-.university-intro, .contact-intro {
+.university-intro,
+.contact-intro {
 	background-image: url('../src/assets/img/bg.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -539,9 +540,8 @@ footer {
 }
 
 .contact-us {
-  padding: 8% 5%;
-		background-color: #EBF0F6;
-	
+	padding: 8% 5%;
+	background-color: #ebf0f6;
 }
 
 .contact-us h2 {
@@ -555,7 +555,7 @@ footer {
 
 .fill-form p {
 	line-height: 24px;
-	padding: 20px ;
+	padding: 20px;
 }
 
 .form {
@@ -571,8 +571,9 @@ footer {
 	padding: 40px 20px;
 }
 
-.form input, textarea {
-  width: 100%;
+.form input,
+textarea {
+	width: 100%;
 	padding: 12px 10px;
 	border-radius: 5px;
 	border: 1px solid var(--thin-dark);
@@ -588,6 +589,77 @@ footer {
 	color: var(--white);
 	cursor: pointer;
 	border-radius: 10px;
+}
+
+/* popup styling starts here */
+
+.modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	backdrop-filter: blur(5px);
+	/* background: #7f8cff6d; */
+	background: var(--white);
+	z-index: 5;
+	animation: modalopen 1s ease-out;
+	display: none;
+}
+
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.popup-container {
+	min-height: 100vh;
+	height: 100%;
+	padding: 18px 16px;
+	background-color: var(--white);
+}
+
+#view-uni {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.uni-desc {
+	padding: 2% 4%;
+}
+
+#view-uni img {
+	width: 90%;
+	height: 200px;
+}
+
+.uni-desc h2 {
+	color: var(--navy-blue);
+	padding: 10px 0;
+}
+
+.uni-desc p {
+	color: var(--thin-dark);
+	line-height: 24px;
+}
+
+.description button {
+	margin: 10px 0;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background-color: var(--navy-blue);
+	color: var(--white);
 }
 
 @media only screen and (min-width: 880px) {
@@ -784,5 +856,14 @@ footer {
 		margin-left: -150px;
 		border-left: 10px solid var(--dark);
 		width: 150px;
+	}
+
+	#view-uni img {
+		width: 80%;
+		height: 400px;
+	}
+
+	.uni-desc {
+		padding: 2% 10%;
 	}
 }

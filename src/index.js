@@ -1,15 +1,16 @@
 import './style.css'
 import renderUniversities from './universities'
 import interSectionObserver from './animation.js'
+import universityPopup from './universityPopup'
 import logoIcon from './assets/img/amaco-logo1.jpg'
 import aboutIcon from './assets/img/amaco-logo2.png'
 import aboutIntroIcon from './assets/img/our-history.jpg'
-import historyIcon from './assets/img/history.jpg'
 import missionIcon from './assets/img/mission.jpg'
 import visionIcon from './assets/img/vision.jpg'
 
 interSectionObserver()
 renderUniversities()
+universityPopup()
 
 const createImages = async () => {
 	const logo = document.createElement('img')
@@ -46,21 +47,13 @@ function toggleMenu() {
 toggleMenu()
 
 const openModal = () => {
-	const modalButtons = Array.from(document.querySelectorAll('.popup'))
-	const moreBtn = Array.from(document.querySelectorAll('.open'))
+	const modalButtons = Array.from(document.querySelectorAll('.university'))
 	const modals = Array.from(document.querySelectorAll('.modal'))
-	const popups = Array.from(document.querySelectorAll('.modal-popups'))
+
 
 	const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
 
-	const moreBtnZip = moreBtn.map((button, i) => [button, popups[i]])
 	modalButtonZip.forEach(pair => {
-		pair[0].addEventListener('click', () => {
-			pair[1].style.display = 'block'
-		})
-	})
-
-	moreBtnZip.forEach(pair => {
 		pair[0].addEventListener('click', () => {
 			pair[1].style.display = 'block'
 		})
@@ -87,6 +80,19 @@ const showHomePage = () => {
 }
 
 showHomePage()
+
+const showAboutPage = () => {
+	document.querySelector('#show-more').addEventListener('click', () => {
+      	document.querySelectorAll('.section').forEach(section => {
+					section.style.display = 'none'
+				})
+				document.querySelector('.about').style.display = 'block'
+	})
+
+}
+
+showAboutPage()
+
 
 const navigatePages = () => {
 	document.querySelectorAll('.list').forEach(navList => {
