@@ -635,13 +635,13 @@ textarea {
 }
 
 .uni-desc {
-	padding: 2% 10%;
+	padding: 2% 4%;
 }
 
 #view-uni img {
-	width: 80%;
-	height: 400px;
-} 
+	width: 90%;
+	height: 200px;
+}
 
 .uni-desc h2 {
 	color: var(--navy-blue);
@@ -856,5 +856,14 @@ textarea {
 		margin-left: -150px;
 		border-left: 10px solid var(--dark);
 		width: 150px;
+	}
+
+	#view-uni img {
+		width: 80%;
+		height: 400px;
+	}
+
+	.uni-desc {
+		padding: 2% 10%;
 	}
 }
