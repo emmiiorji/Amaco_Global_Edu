@@ -56,7 +56,9 @@ const universities = `
        
 `
 const renderUniversities = () => {
-	document.querySelector('.university-lists').innerHTML = universities
+	document.querySelectorAll('.university-lists').forEach(uni => {
+		uni.innerHTML = universities
+	})
 }
 
 export default renderUniversities
