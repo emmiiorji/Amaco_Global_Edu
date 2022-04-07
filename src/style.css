@@ -439,14 +439,14 @@ footer {
 
 .school-ad {
 	margin-top: 50px;
- text-align: center;
+	text-align: center;
 }
 
 .school-ad h2 {
 	font-size: 3rem;
 }
 
-.about-intro h1, 
+.about-intro h1,
 .service-intro h1,
 .university-intro h1 {
 	padding: 50px;
@@ -521,6 +521,15 @@ footer {
 	margin-top: 100px;
 }
 
+.universities .university-lists {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.universities .university {
+	text-align: center;
+}
+
 @media only screen and (min-width: 880px) {
 	/* header desktop view styling start here */
 
@@ -544,7 +553,7 @@ footer {
 		justify-content: flex-end;
 		align-items: center;
 		padding-left: initial;
-		padding-top: 10px;
+		padding-top: 0;
 		padding-right: initial;
 	}
 
@@ -676,7 +685,7 @@ footer {
 		height: 70vh;
 	}
 
-	.about-intro h1, 
+	.about-intro h1,
 	.service-intro h1,
 	.university-intro h1 {
 		width: 50%;
@@ -695,10 +704,5 @@ footer {
 	.our-history-img,
 	.our-mission-img {
 		flex: 100%;
-	}
-
-	.universities .university-lists {
-		width: 90%;
-		margin: 40px auto;
 	}
 }
