@@ -1,4 +1,4 @@
-import uni from './assets/img/'
+import uni from './assets/img/uni.jpg'
 
 const uni = `
 <section class="modal">
@@ -107,8 +107,8 @@ const uni = `
 </section>
            `
 
-const readStories = () => {
-	document.querySelector('.more-stories-popup').innerHTML = stories
-	document.querySelector('.view-more-stories-popup').innerHTML = moreStories
+const universityPopup = () => {
+	document.querySelector('.university-popup').innerHTML = uni
+
 }
-export default readStories
+export default universityPopup
