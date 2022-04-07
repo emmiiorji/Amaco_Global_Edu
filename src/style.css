@@ -403,7 +403,8 @@ footer {
 }
 
 /* about page styling starts here */
-.about-intro {
+.about-intro,
+.service-intro {
 	background-image: url('../src/assets/img/about.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
