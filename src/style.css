@@ -535,13 +535,13 @@ footer {
 /* contact page styling starts here */
 
 .contact {
-	margin-bottom: 50px ;
+	margin: 50px 0;
 }
 
 .contact-us {
-  padding: 5%;
+  padding: 8% 5%;
 		background-color: #EBF0F6;
-		/* padding-top: 50px; */
+	
 }
 
 .contact-us h2 {
