@@ -47,21 +47,13 @@ function toggleMenu() {
 toggleMenu()
 
 const openModal = () => {
-	const modalButtons = Array.from(document.querySelectorAll('.popup'))
-	const moreBtn = Array.from(document.querySelectorAll('.open'))
+	const modalButtons = Array.from(document.querySelectorAll('.university'))
 	const modals = Array.from(document.querySelectorAll('.modal'))
-	const popups = Array.from(document.querySelectorAll('.modal-popups'))
+
 
 	const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
 
-	const moreBtnZip = moreBtn.map((button, i) => [button, popups[i]])
 	modalButtonZip.forEach(pair => {
-		pair[0].addEventListener('click', () => {
-			pair[1].style.display = 'block'
-		})
-	})
-
-	moreBtnZip.forEach(pair => {
 		pair[0].addEventListener('click', () => {
 			pair[1].style.display = 'block'
 		})
