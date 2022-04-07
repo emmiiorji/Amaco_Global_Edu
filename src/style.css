@@ -328,7 +328,7 @@ header {
 .newsletter form {
 	margin: 30px 0;
 	background-color: var(--faded-blue);
-	padding: 50px;
+	padding: 50px 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -342,6 +342,7 @@ header {
 	border-radius: 5px;
 	border: none;
 	flex: 1;
+	width: 100%;
 	background: var(--white);
 }
 
@@ -403,7 +404,8 @@ footer {
 }
 
 /* about page styling starts here */
-.about-intro {
+.about-intro,
+.service-intro {
 	background-image: url('../src/assets/img/about.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -419,13 +421,44 @@ footer {
 	flex-direction: column;
 }
 
-.about-intro h1 {
+.university-intro, .contact-intro {
+	background-image: url('../src/assets/img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	mix-blend-mode: multiply;
+	background-color: var(--black);
+	height: 40vh;
+	object-fit: contain;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	text-align: left;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.school-ad {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.school-ad h2 {
+	font-size: 3rem;
+}
+
+.about-intro h1,
+.service-intro h1,
+.university-intro h1,
+.contact-intro h1 {
 	padding: 50px;
 	font-size: 3rem;
 	color: var(--white);
 }
 
-.about-intro h1 span {
+.about-intro h1 span,
+.service-intro h1 span,
+.university-intro h1 span,
+.contact-intro h1 span {
 	color: var(--navy-blue);
 }
 
@@ -463,6 +496,100 @@ footer {
 	margin-top: 50px;
 }
 
+.services {
+	position: relative;
+}
+
+.service-text {
+	width: 80%;
+	margin: auto;
+	margin-top: -50px;
+	height: 180px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--navy-blue);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	z-index: 5;
+	padding: 10px 20px;
+	line-height: 24px;
+	color: var(--white);
+}
+
+.services .service-lists {
+	width: 80%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+.universities .university-lists {
+	width: 90%;
+	margin: 40px auto;
+}
+
+.universities .university {
+	text-align: center;
+}
+
+/* contact page styling starts here */
+
+.contact {
+	margin: 50px 0;
+}
+
+.contact-us {
+  padding: 8% 5%;
+		background-color: #EBF0F6;
+	
+}
+
+.contact-us h2 {
+	margin: 10px 0;
+	font-size: 2rem;
+}
+
+.fill-form {
+	padding: 10px;
+}
+
+.fill-form p {
+	line-height: 24px;
+	padding: 20px ;
+}
+
+.form {
+	flex: 2;
+	margin-top: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	flex-direction: column;
+	box-shadow: 5px 5px 10px 10px rgb(238, 245, 253);
+	background-color: var(--white);
+	padding: 40px 20px;
+}
+
+.form input, textarea {
+  width: 100%;
+	padding: 12px 10px;
+	border-radius: 5px;
+	border: 1px solid var(--thin-dark);
+	outline: none;
+	background-color: none;
+}
+.form button {
+	padding: 15px 25px;
+	margin: 15px 0;
+	border: none;
+	outline: none;
+	background-color: var(--navy-blue);
+	color: var(--white);
+	cursor: pointer;
+	border-radius: 10px;
+}
+
 @media only screen and (min-width: 880px) {
 	/* header desktop view styling start here */
 
@@ -486,7 +613,7 @@ footer {
 		justify-content: flex-end;
 		align-items: center;
 		padding-left: initial;
-		padding-top: 10px;
+		padding-top: 0;
 		padding-right: initial;
 	}
 
@@ -611,12 +738,18 @@ footer {
 	}
 
 	/* about page styling starts here */
-	.about-intro {
+	.about-intro,
+	.service-intro,
+	.university-intro,
+	.contact-intro {
 		padding: 0 8%;
 		height: 70vh;
 	}
 
-	.about-intro h1 {
+	.about-intro h1,
+	.service-intro h1,
+	.university-intro h1,
+	.contact h1 {
 		width: 50%;
 		padding-top: 160px;
 		font-size: 4rem;
@@ -633,5 +766,23 @@ footer {
 	.our-history-img,
 	.our-mission-img {
 		flex: 100%;
+	}
+
+	.contact-container {
+		display: flex;
+		gap: 50px;
+		padding-top: 50px;
+	}
+
+	.contact-us {
+		flex: 2;
+		padding: 40px 7%;
+	}
+
+	.form {
+		padding: 30px 7%;
+		margin-left: -150px;
+		border-left: 10px solid var(--dark);
+		width: 150px;
 	}
 }
