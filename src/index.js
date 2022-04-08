@@ -116,3 +116,15 @@ const navigatePages = () => {
 }
 
 navigatePages()
+
+const disableCheck = () => {
+	let checkboxes = Array.from(document.querySelectorAll(`.checkbox input[type=checkbox]`))
+	checkboxes.forEach((checkbox) => {
+		checkbox.addEventListener("click", (e) => {
+			e.preventDefault()
+			e.stopPropagation()
+		})
+	})
+}
+
+disableCheck()
