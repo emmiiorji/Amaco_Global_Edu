@@ -51,7 +51,6 @@ const openModal = () => {
 	console.log(modalButtons)
 	const modals = Array.from(document.querySelectorAll('.modal'))
 
-
 	const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
 
 	modalButtonZip.forEach(pair => {
@@ -83,17 +82,17 @@ const showHomePage = () => {
 showHomePage()
 
 const showAboutPage = () => {
-	document.querySelector('#show-more').addEventListener('click', () => {
-      	document.querySelectorAll('.section').forEach(section => {
-					section.style.display = 'none'
-				})
-				document.querySelector('.about').style.display = 'block'
+	document.querySelectorAll('.show-more').forEach(btn => {
+		btn.addEventListener('click', () => {
+			document.querySelectorAll('.section').forEach(section => {
+				section.style.display = 'none'
+			})
+			document.querySelector('.about').style.display = 'block'
+		})
 	})
-
 }
 
 showAboutPage()
-
 
 const navigatePages = () => {
 	document.querySelectorAll('.list').forEach(navList => {
@@ -119,8 +118,8 @@ navigatePages()
 
 const disableCheck = () => {
 	let checkboxes = Array.from(document.querySelectorAll(`.checkbox input[type=checkbox]`))
-	checkboxes.forEach((checkbox) => {
-		checkbox.addEventListener("click", (e) => {
+	checkboxes.forEach(checkbox => {
+		checkbox.addEventListener('click', e => {
 			e.preventDefault()
 			e.stopPropagation()
 		})
