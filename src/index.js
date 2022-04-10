@@ -131,7 +131,14 @@ disableCheck()
 const countryList = () => {
 	for (const country in countries) {
 		const list = countries[country].name
-		document.querySelector('#country').innerHTML += `<option value=${list} class="option">${list}</option>`
+		document.querySelector('#country').innerHTML += `<option value=${list} id="interest">${list}</option>`
+	} 
+
+	for (const country in countries) {
+		const list = countries[country].name
+		document.querySelector(
+			'#residence',
+		).innerHTML += `<option value=${list} id="homeland">${list}</option>`
 	}
 }
 countryList()
