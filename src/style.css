@@ -637,13 +637,20 @@ textarea {
 	padding-left: 5px;
 }
 
+.submit-app-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		margin: 30px 0;
+}
+
 .submit-form {
-	padding: 10px 5%;
+	padding: 10px 10%;
 	background-color: var(--orange);
-	margin: 20px 0;
 	color: var(--white);
 	border: none;
 	outline: none;
+	font-size: 1rem;
 }
 
 /* popup styling starts here */
