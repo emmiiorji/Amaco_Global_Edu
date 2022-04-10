@@ -1,7 +1,7 @@
 {
-	"name": "Amaco_Global_Edu",
+	"name": "amaco_global_edu",
 	"version": "1.0.0",
-	"description": "",
+	"description": "We offer guidance services to students seeking to study abroad",
 	"main": "server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -15,8 +15,9 @@
 		"type": "git",
 		"url": "git+https://github.com/emmiiorji/Amaco_Global_Edu.git"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": ["study", "abroad",
+		 "international student", "admission"],
+	"author": "Amaco Global Education Limited",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/emmiiorji/Amaco_Global_Edu/issues"
