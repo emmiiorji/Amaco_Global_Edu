@@ -7,6 +7,7 @@ import aboutIcon from './assets/img/amaco-logo2.png'
 import aboutIntroIcon from './assets/img/our-history.jpg'
 import missionIcon from './assets/img/mission.jpg'
 import visionIcon from './assets/img/vision.jpg'
+import { countries } from 'countries-list'
 
 interSectionObserver()
 renderUniversities()
@@ -48,7 +49,6 @@ toggleMenu()
 
 const openModal = () => {
 	const modalButtons = Array.from(document.querySelectorAll('.university'))
-	console.log(modalButtons)
 	const modals = Array.from(document.querySelectorAll('.modal'))
 
 	const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
@@ -127,3 +127,11 @@ const disableCheck = () => {
 }
 
 disableCheck()
+
+const countryList = () => {
+	for (const country in countries) {
+		const list = countries[country].name
+		document.querySelector('#country').innerHTML += `<option value=${list} class="option">${list}</option>`
+	}
+}
+countryList()
