@@ -32,6 +32,7 @@
 		"webpack-dev-server": "^4.7.4"
 	},
 	"dependencies": {
-		"clean-webpack-plugin": "^4.0.0"
+		"clean-webpack-plugin": "^4.0.0",
+		"countries-list": "^2.6.1"
 	}
 }
