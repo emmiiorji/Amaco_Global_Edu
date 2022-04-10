@@ -621,7 +621,7 @@ textarea {
 	margin-bottom: 15px;
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid var(--thin-dark);
+	border: 1px solid rgba(128, 128, 128, 0.514);
 	outline: none;
 }
 
@@ -634,7 +634,6 @@ textarea {
 	font-size: 1.5rem;
 	border-left: 3px solid var(--orange);
 	margin-bottom: 20px;
-	font-family: 'Times New Roman', Times, serif;
 	padding-left: 5px;
 }
 
