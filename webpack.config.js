@@ -40,6 +40,7 @@ module.exports = {
 			inject: 'body',
 			chunks: ['index'],
 			filename: 'index.html',
+			favicon: './src/assets/img/favicon.ico'
 		})
 	],
 }
