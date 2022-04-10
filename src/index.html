@@ -259,7 +259,7 @@
 		<section class="section contacts"> 
 				<div class="contact-intro">
 					<div class="overlay">
-				<h1>Contact <span>Us</span></h1>
+				    <h1>Contact <span>Us</span></h1>
 					</div>
 			</div>
 			<div class="service-text">
@@ -281,11 +281,11 @@ so that we can follow up with you.</p>
 					</div>
 			</div>
 			<form class="form">
-				<input type="text" placeholder="Full name" >
-				<input type="email" placeholder="Your Email Address" >
-				<input type="number" placeholder="Phone number" >
-				<input type="text" placeholder="State of Residence" >
-				<textarea name="" id="" cols="30" rows="7" value="Your Message"></textarea>
+				<input type="text" placeholder="Full name" required>
+				<input type="email" placeholder="Your Email Address" required>
+				<input type="number" placeholder="Phone number" required>
+				<input type="text" placeholder="State of Residence" required>
+				<textarea name="" id="" cols="30" rows="7" value="Your Message" required></textarea>
 				<button type="submit">Make Enquiry</button>
 			</form>
 			</div>
@@ -293,7 +293,7 @@ so that we can follow up with you.</p>
 		<section class="section apply"> 
 			<div class="apply-intro">
 				<div class="overlay">
-				  <h1>Application<span>Form</span></h1>
+				  <h1>Application <span>Form</span></h1>
 				</div>
 			</div>
 			<div class="service-text">
@@ -304,23 +304,13 @@ so that we can follow up with you.</p>
 					<div class="school">
 						<h2>Program of Interest</h2>
 						<div class="form-one">
-              <div class="course">
+								<div class="course">
 								<label for="course">Course of Interest</label>
-								<select name="course" id="course">
-									<option value="">Please select course of Interest</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-									<option value="Add course">Add course</option>
-								</select>
-					    </div>
+								<input type="text" placeholder="Kindly enter your course of interest" name="course" id="course" required>
+							</div>
 							<div class="program">
 								<label for="program">Program of Interest</label>
-								<select name="program" id="program">
+								<select name="program" id="program" required>
 									<option value="">Please select course of Interest</option>
 									<option value="Undergraduate">Undergraduate</option>
 									<option value="Bachelor">Bachelor</option>
@@ -330,21 +320,12 @@ so that we can follow up with you.</p>
 							</div>
 							<div class="country">
 								<label for="country">Country of Interest</label>
-								<select name="country" id="country">
-									<option value="">Please select country of Interest</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
-									<option value="Add country">Add country</option>
+								<select name="country" id="country" class="country" required>
 								</select>
 							</div>
 							<div class="study-method">
 								<label for="study-method">Study Method</label>
-								<select name="study-method" id="study-method">
+								<select name="study-method" id="study-method" required>
 									<option value="">Please select study method</option>
 									<option value="online">Online</option>
 									<option value="campus">On Campus</option>
@@ -357,31 +338,31 @@ so that we can follow up with you.</p>
             <div class="personal-info">
 							<div class="fname">
 								<label for="firstname">First Name</label>
-								<input type="text" placeholder="First Name" name="firstname" id="firstname">
+								<input type="text" placeholder="Kindly enter your first name" name="firstname" id="firstname" required>
 							</div>
 							<div class="middlename">
 								<label for="middlename">Middle Name</label>
-								<input type="text" placeholder="Middle Name" name="middlename" id="middlename">
+								<input type="text" placeholder="Kindly enter your middle name" name="middlename" id="middlename" required>
 							</div>
 							<div class="lastname">
 								<label for="lastname">Last Name</label>
-								<input type="text" placeholder="Last Name" name="lastname" id="lastname">
+								<input type="text" placeholder="Kindly enter your last name" name="lastname" id="lastname" required>
 							</div>
 							<div class="dob">
-								<label for="dob">Date Of Birth</label>
-								<input type="date" placeholder="Last Name" name="dob" id="dob">
+								<label for="dob">Date of Birth</label>
+								<input type="date" placeholder="Last Name" name="dob" id="dob" required>
 							</div>
 							<div class="citizen">
-								<label for="citizen">Study Method</label>
-								<select name="citizen" id="citizen">
-									<option value="">Are you a citizen of Nigeria?</option>
+								<label for="citizen">Are you a citizen of Nigeria?</label>
+								<select name="citizen" id="citizen" required>
+									<option value="">Please Select</option>
 									<option value="yes">Yes</option>
 									<option value="no">No</option>
 								</select>
 							</div>
 							<div class="education">
 								<label for="education">Current Level of Education</label>
-								<select name="education" id="education">
+								<select name="education" id="education" required>
 									<option value="">Please select course of study</option>
 									<option value="Undergraduate">Undergraduate</option>
 									<option value="Bachelor">Bachelor</option>
@@ -396,29 +377,38 @@ so that we can follow up with you.</p>
             <div class="form-three">
               <div class="phone-number">
 							  <label for="phone-number">Phone Number</label>
-							  <input type="tel" placeholder="Phone Number" name="phone-number" id="phone-number">
+							  <input type="tel" placeholder="Kindly enter your phone number" name="phone-number" id="phone-number" required>
 						  </div>
 							<div class="email">
 								<label for="email">Email Address</label>
-								<input type="email" placeholder="Email" name="email" id="email">
+								<input type="email" placeholder="Kindly enter your email address" name="email" id="email" required>
 							</div>
-							<div class="state">
-								<label for="state">State of Residence</label>
-								<select name="state" id="state">
-									<option value="">Select state </option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
-									<option value="Add state">Add state</option>
+							<div class="country">
+								<label for="residence">Country of Residence</label>
+								<select name="residence" id="residence" class="country" required>
 								</select>
+							</div>
+							<div class="county-state">
+								<label for="county-state">County/State</label>
+								<input type="text" placeholder="Kindly enter your county/state" name="county-state" id="county-state" required>
+							</div>
+							<div class="city">
+								<label for="city">City</label>
+								<input type="text" placeholder="Kindly enter your current city" name="city" id="city" required>
+							</div>
+							<div class="address-line-1">
+								<label for="address-line-1">Address Line 1</label>
+								<input type="text" placeholder="Kindly enter your current address line 1" name="address-line-1" id="address-line-1" required>
+							</div>
+							<div class="address-line-2">
+								<label for="address-line-2">Address Line 2</label>
+								<input type="text" placeholder="Kindly enter your current address line 2" name="address-line-2" id="address-line-2">
 							</div>
 						</div>
 					</div>
-					<button type="submit" class="submit-form">Submit</button>
+					<div class="submit-app-form">
+             <button type="submit" class="submit-form">Submit</button>
+					</div>
 				</form>
 			</div>
 		</div>
