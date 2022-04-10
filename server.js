@@ -10,6 +10,6 @@ var server = app.listen(app.get('port'), function () {
 	console.log('listening on port ', server.address().port)
 })
 
-app.configure(function () {
-	app.use('/favicon.ico', express.static(path.join(__dirname, 'dist')))
-})
+// app.configure(function () {
+// 	app.use('/favicon.ico', express.static(path.join(__dirname, 'dist')))
+// })
