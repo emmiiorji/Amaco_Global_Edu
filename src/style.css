@@ -864,7 +864,6 @@ textarea {
 	.university-intro,
 	.contact-intro,
 	.apply-intro {
-		/* padding: 0 8%; */
 		height: 70vh;
 	}
 
@@ -873,7 +872,6 @@ textarea {
 	.university-intro h1,
 	.contact h1,
 	.apply-intro h1 {
-		width: 50%;
 		font-size: 4rem;
 	}
 	.our-history,
