@@ -15,8 +15,12 @@
 		"type": "git",
 		"url": "git+https://github.com/emmiiorji/Amaco_Global_Edu.git"
 	},
-	"keywords": ["study", "abroad",
-		 "international student", "admission"],
+	"keywords": [
+		"study",
+		"abroad",
+		"international student",
+		"admission"
+	],
 	"author": "Amaco Global Education Limited",
 	"license": "ISC",
 	"bugs": {
