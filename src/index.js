@@ -105,9 +105,16 @@ const navigatePages = () => {
 			document.querySelectorAll('.section').forEach(section => {
 				section.style.display = 'none'
 				let { className } = section
+
+				// section.classList.contains(list)
 				className = className.split(' ')[1]
 				if (className === list) {
-					activeSection.style.display = 'block'
+					activeSection.style.display = 'block';
+					const overlay = activeSection.querySelector('.overlay')
+					const boxShadow = activeSection.classList.contains('home')?
+															'inset 200px 0px 200px 0px #000' : 'none'
+					overlay.style['box-shadow'] = boxShadow;
+					
 				}
 			})
 		})
