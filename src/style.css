@@ -136,8 +136,8 @@ header {
 }
 
 .overlay {
-	background-color: rgba(0, 0, 0, 0.37);
-	box-shadow: inset 200px 0px 200px 0px #000;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: none;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -250,7 +250,7 @@ header {
 	font-size: 1.5rem;
 	font-weight: 600;
 	text-align: center;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .service p {
@@ -838,9 +838,11 @@ textarea {
 	/* intro section styling starts here */
 
 	.overlay {
+		background-color: rgba(0, 0, 0, 0.37);
 		align-items: flex-start;
 		text-align: left;
 		padding: 0 8%;
+		box-shadow: inset 200px 0px 200px 0px #000;
 	}
 
 	.intro h1 {
