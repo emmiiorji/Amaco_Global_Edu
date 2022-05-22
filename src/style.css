@@ -223,7 +223,8 @@ header {
 
 .services-section p,
 .universities-section p,
-.newsletter p {
+.newsletter p,
+.service p {
 	color: var(--thin-dark);
 	font-weight: 300;
 	text-align: center;
