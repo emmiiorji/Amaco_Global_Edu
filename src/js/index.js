@@ -1,6 +1,6 @@
 import '../css/style.css'
 import renderUniversities from './universities.js'
-import interSectionObserver from './animation.js'
+import interSectionObserver from './modules/animation.js'
 import universityPopup from './universityPopup.js'
 import logoIcon from '../assets/img/amaco-logo1.jpg'
 import aboutIcon from '../assets/img/amaco-logo2.jpg'
