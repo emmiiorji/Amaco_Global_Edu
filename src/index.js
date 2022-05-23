@@ -3,7 +3,7 @@ import renderUniversities from './universities'
 import interSectionObserver from './animation.js'
 import universityPopup from './universityPopup'
 import logoIcon from './assets/img/amaco-logo1.jpg'
-import aboutIcon from './assets/img/amaco-logo2.png'
+import aboutIcon from './assets/img/amaco-logo2.jpg'
 import aboutIntroIcon from './assets/img/our-history.jpg'
 import missionIcon from './assets/img/mission.jpg'
 import visionIcon from './assets/img/vision.jpg'
@@ -105,9 +105,16 @@ const navigatePages = () => {
 			document.querySelectorAll('.section').forEach(section => {
 				section.style.display = 'none'
 				let { className } = section
+
+				// section.classList.contains(list)
 				className = className.split(' ')[1]
 				if (className === list) {
-					activeSection.style.display = 'block'
+					activeSection.style.display = 'block';
+					const overlay = activeSection.querySelector('.overlay')
+					const boxShadow = activeSection.classList.contains('home')?
+															'inset 200px 0px 200px 0px #000' : 'none'
+					overlay.style['box-shadow'] = boxShadow;
+					
 				}
 			})
 		})

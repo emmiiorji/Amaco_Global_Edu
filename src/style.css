@@ -136,7 +136,8 @@ header {
 }
 
 .overlay {
-	background-color: rgba(0, 0, 0, 0.37);
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: none;
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -149,6 +150,10 @@ header {
 .intro h1 {
 	font-size: 2rem;
 	color: var(--white);
+}
+
+.intro .caption-highlight {
+	color: #f06e36;
 }
 
 .intro p {
@@ -218,7 +223,8 @@ header {
 
 .services-section p,
 .universities-section p,
-.newsletter p {
+.newsletter p,
+.service p {
 	color: var(--thin-dark);
 	font-weight: 300;
 	text-align: center;
@@ -245,7 +251,7 @@ header {
 	font-size: 1.5rem;
 	font-weight: 600;
 	text-align: center;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .service p {
@@ -410,7 +416,7 @@ footer {
 /* about page styling starts here */
 .about-intro,
 .service-intro {
-	background-image: url('../src/assets/img/about.jpg');
+	background-image: url('../src/assets/img/about2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	mix-blend-mode: multiply;
@@ -425,11 +431,16 @@ footer {
 	flex-direction: column;
 }
 
+.service-intro {
+	background-image: url('../src/assets/img/services.jpg');
+}
+
 .university-intro,
 .contact-intro,
 .apply-intro {
 	background-image: url('../src/assets/img/bg.jpg');
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-size: 100% 100%;
 	mix-blend-mode: multiply;
 	background-color: var(--black);
@@ -441,6 +452,10 @@ footer {
 	text-align: left;
 	align-items: flex-start;
 	flex-direction: column;
+}
+
+.contact-intro {
+	background-image: url('../src/assets/img/contact-us.jpg');
 }
 
 .school-ad {
@@ -513,7 +528,7 @@ footer {
 	width: 80%;
 	margin: auto;
 	margin-top: -50px;
-	height: 180px;
+	min-height: 180px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -521,7 +536,7 @@ footer {
 	background-color: var(--orange);
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	z-index: 5;
-	padding: 10px 20px;
+	padding: 60px 20px 10px 20px;
 	line-height: 24px;
 	color: var(--white);
 }
@@ -554,27 +569,37 @@ footer {
 
 .contact-us h2 {
 	margin: 10px 0;
-	font-size: 2rem;
+	font-size: 1.8rem;
+}
+.contact-us h3 {
+	margin: 10px 0;
+	font-size: 1.5rem;
 }
 
 .fill-form {
 	padding: 10px;
 }
 
-.fill-form p {
+.fill-form p{
 	line-height: 24px;
-	padding: 20px;
+	padding: 20px 20px 20px 50px;
+	color: #888785;
+}
+
+.faded-text {
+	color: #888785;
+	font-size: 16	px;
 }
 
 .form {
 	flex: 2;
-	margin-top: 30px;
+	margin: 40px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	gap: 20px;
 	flex-direction: column;
-	box-shadow: 5px 5px 10px 10px rgb(238, 245, 253);
+	box-shadow: 5px 5px 10px 7px rgb(238, 245, 253);
 	background-color: var(--white);
 	padding: 40px 20px;
 }
@@ -814,9 +839,11 @@ textarea {
 	/* intro section styling starts here */
 
 	.overlay {
+		background-color: rgba(0, 0, 0, 0.37);
 		align-items: flex-start;
 		text-align: left;
 		padding: 0 8%;
+		box-shadow: inset 200px 0px 200px 0px #000;
 	}
 
 	.intro h1 {
@@ -917,11 +944,16 @@ textarea {
 		display: flex;
 		gap: 50px;
 		padding-top: 50px;
+		/* align-items: center;
+		justify-content: center; */
+		/* background: red; */
 	}
 
 	.contact-us {
-		flex: 2;
+		flex: 3;
 		padding: 40px 7%;
+		/* height: auto; */
+		/* width: calc(50%); */
 	}
 
 	.form {
