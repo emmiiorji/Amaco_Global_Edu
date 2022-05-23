@@ -32,6 +32,7 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	background-color: var(--white);
+
 	overflow-x: hidden;
 	position: relative;
 }
@@ -126,7 +127,7 @@ header {
 /* intro section styling starts here */
 
 .intro {
-	background-image: url('../src/assets/img/bgthree.jpg');
+	background-image: url('../assets/img/bgthree.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	mix-blend-mode: multiply;
@@ -416,7 +417,7 @@ footer {
 /* about page styling starts here */
 .about-intro,
 .service-intro {
-	background-image: url('../src/assets/img/about2.jpg');
+	background-image: url('../assets/img/about2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	mix-blend-mode: multiply;
@@ -432,13 +433,13 @@ footer {
 }
 
 .service-intro {
-	background-image: url('../src/assets/img/services.jpg');
+	background-image: url('../assets/img/services.jpg');
 }
 
 .university-intro,
 .contact-intro,
 .apply-intro {
-	background-image: url('../src/assets/img/bg.jpg');
+	background-image: url('../assets/img/bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-size: 100% 100%;
@@ -455,7 +456,7 @@ footer {
 }
 
 .contact-intro {
-	background-image: url('../src/assets/img/contact-us.jpg');
+	background-image: url('../assets/img/contact-us.jpg');
 }
 
 .school-ad {

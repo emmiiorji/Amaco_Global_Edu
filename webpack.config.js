@@ -7,7 +7,7 @@ module.exports = {
 	mode: 'production',
 	devtool: 'source-map',
 	entry: {
-		index: './src/index.js',
+		index: './src/js/index.js',
 	},
 	devServer: {
 		static: 'dist',
@@ -43,4 +43,7 @@ module.exports = {
 			favicon: './src/assets/img/favicon.ico'
 		})
 	],
+	stats: {
+		errorDetails: true,
+	},
 }

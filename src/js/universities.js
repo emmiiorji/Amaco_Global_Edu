@@ -1,4 +1,5 @@
-import uni from './assets/img/uni.jpg'
+import uni from '../assets/img/uni.jpg'
+
 
 const universities = `
          <div class="university">
