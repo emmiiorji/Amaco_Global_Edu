@@ -942,15 +942,17 @@ const unisList = [
   },
 ];
 
-const countries = {
-  USA: { img: uni },
-  Canada: { img: uni },
-  UK: { img: uni },
-  Australia: { img: uni },
-  Ukraine: { img: uni },
-  Cyprus: { img: uni },
-  Turkey: { img: uni },
-  Russia: { img: uni },
-  Schengen: { img: uni },
-  Germany: { img: uni },
-}
+const countriesList = [
+  { name: 'USA', img: uni },
+  { name: 'Canada', img: uni },
+  { name: 'UK', img: uni },
+  { name: 'Australia', img: uni },
+  { name: 'Ukraine', img: uni },
+  { name: 'Cyprus', img: uni },
+  { name: 'Turkey', img: uni },
+  { name: 'Russia', img: uni },
+  { name: 'Schengen', img: uni },
+  { name: 'Germany', img: uni },
+]
+
+export { unisList, countriesList }
