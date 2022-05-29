@@ -13,11 +13,3 @@ const markupCountries = (countriesList) => {
   });
   return markup;
 }
-
-const renderUniversities = () => {
-	document.querySelectorAll('.university-lists').forEach(uni => {
-		uni.innerHTML = universities
-	})
-}
-
-export default renderUniversities
