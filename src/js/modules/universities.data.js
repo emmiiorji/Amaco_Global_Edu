@@ -943,16 +943,16 @@ const unisList = [
 ];
 
 const countriesList = [
-  { name: 'USA', img: uni },
-  { name: 'Canada', img: uni },
-  { name: 'UK', img: uni },
-  { name: 'Australia', img: uni },
-  { name: 'Ukraine', img: uni },
-  { name: 'Cyprus', img: uni },
-  { name: 'Turkey', img: uni },
-  { name: 'Russia', img: uni },
-  { name: 'Schengen', img: uni },
-  { name: 'Germany', img: uni },
+  { name: 'USA', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/USA_country_banner_rerznd.jpg' },
+  { name: 'Canada', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/Canada_country_banner_ylczqi.jpg' },
+  { name: 'UK', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/UK_country_banner_w51uel.jpg' },
+  { name: 'Australia', img: 'https://res.cloudinary.com/emmii/image/upload/v1653850201/Amaco%20Global%20Education/australia_country_banner_kkzgbc.jpg' },
+  { name: 'Ukraine', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/Ukraine_country_banner_ar6hyx.jpg' },
+  { name: 'Cyprus', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849799/Amaco%20Global%20Education/cyprus_country_banner_gmaecn.jpg' },
+  { name: 'Turkey', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/turkey_country_banner_rbtekg.jpg' },
+  { name: 'Russia', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/russia_country_banner_jspim5.jpg' },
+  { name: 'Schengen', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849803/Amaco%20Global%20Education/schengen_country_banner_pbr67b.jpg' },
+  // { name: 'Germany', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/germany_country_banner_uohuq5.jpg' },
 ]
 
 const initCount = {}; 
