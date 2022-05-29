@@ -952,7 +952,7 @@ const countriesList = [
   { name: 'Turkey', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/turkey_country_banner_rbtekg.jpg' },
   { name: 'Russia', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/russia_country_banner_jspim5.jpg' },
   { name: 'Schengen', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849803/Amaco%20Global%20Education/schengen_country_banner_pbr67b.jpg' },
-  // { name: 'Germany', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/germany_country_banner_uohuq5.jpg' },
+  { name: 'Germany', img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/germany_country_banner_uohuq5.jpg' },
 ]
 
 const initCount = {}; 

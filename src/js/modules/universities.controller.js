@@ -5,17 +5,19 @@ const markupCountries = (countriesList) => {
   let markup = '';
   
   countriesList.forEach((country, index) => {
-    markup += `<div class="university" id="country_${index}">
-                <img src=${country.img} alt="university">
-                <h2>${country.name}</h2>
-                <p>${countriesCount[country.name]} Universities</p>
-              </div>`;
+    if(countriesCount[country.name]) {
+      markup += `<div class="university" id="country_${index}">
+                  <img src=${country.img} alt="university">
+                  <h2>${country.name}</h2>
+                  <p>${countriesCount[country.name]} Universities</p>
+                </div>`;
+    }
   });
   return markup;
 }
 
 const markupUniversities = (universities) => {
-  const markup = '';
+  let markup = '';
 
   universities.forEach((university) => {
     markup += ``;
@@ -25,7 +27,7 @@ const markupUniversities = (universities) => {
 };
 
 const renderUniversitiesPopup = (e) => {
-  const countryIndex = parseInt(e.target.id.split('_')[1]);
+  const countryIndex = parseInt(e.target.parentElement.id.split('_')[1]);
   const country = countriesList[countryIndex].name.toLowerCase();
   const universities = unisList.filter((university) => university.country.toLowerCase() === country);
 
@@ -35,6 +37,7 @@ const renderUniversitiesPopup = (e) => {
   universityModal.innerHTML = `<div class="popup-container">
                                   ${markupUniversities(universities)}
                                 </div>`
+  document.body.appendChild(universityModal)
 };
 
 {/* <section class="modal">
