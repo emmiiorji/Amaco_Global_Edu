@@ -1,19 +1,8 @@
 import uni from '../assets/img/uni.jpg'
-import { unisList, countriesList } from './universitiesData';
+import { unisList, countriesList } from './universities.data';
 
 const markupCountries = (countriesList) => {
   let markup = '';
-  const initCount = {}
-  
-  // Count the number of universities listed for each country
-  const countriesCount = unisList.reduce((previous, current) => {
-    if(previous[current.country] === undefined) {
-      previous[current.country] = 1;
-    } else {
-      previous[current.country] += 1
-    }
-    return previous
-  }, initCount);
 
   countriesList.forEach((country) => {
     markup += `<div class="university">

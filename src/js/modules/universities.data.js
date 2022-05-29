@@ -955,4 +955,16 @@ const countriesList = [
   { name: 'Germany', img: uni },
 ]
 
-export { unisList, countriesList }
+const initCount = {}; 
+  // Count the number of universities listed for each country
+const countriesCount = unisList.reduce((previous, current) => {
+  if(previous[current.country] === undefined) {
+    previous[current.country] = 1;
+  } else {
+    previous[current.country] += 1;
+  }
+  return previous;
+}, initCount);
+
+
+export { unisList, countriesList, countriesCount }
