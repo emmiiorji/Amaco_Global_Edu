@@ -1,4 +1,3 @@
-// import uni from '../assets/img/uni.jpg'
 import { unisList, countriesList, countriesCount } from './universities.data';
 
 const markupCountries = (countriesList) => {
@@ -21,7 +20,6 @@ const markupUniversities = (universities) => {
 
   universities.forEach((university) => {
     markup += `<a href="${university['universities-href']}" target="_blank" class="uni-card">${university.university}</a>`;
-    // Finish up markup
   });
   return markup;
 };
@@ -53,21 +51,5 @@ const closeModal = () => {
     document.querySelector('body').style.overflow = 'auto'
   }
 };
-
-{/* <section class="modal">
-  <div class="popup-container">
-    <div id="view-uni">
-      <img src=${uni} alt="" />
-    </div>
-    <div class="uni-desc">
-      <h2> University Of California </h2>  
-      <p>	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga illo exercitationem eaque perspiciatis sint voluptatum deleniti sunt ducimus iusto corporis blanditiis nobis ut placeat, nulla aliquid beatae veritatis, dolores doloremque consequuntur rerum et maxime. Corrupti officiis maiores, facilis in deserunt doloremque architecto quaerat placeat recusandae illum aliquam nobis id perferendis</p>
-      <div class="description cancel">
-        <button type="button">Close</button>
-      </div>
-    </div>
-  </div>
-</section> */}
-
 
 export { markupCountries, renderUniversitiesPopup, closeModal };
