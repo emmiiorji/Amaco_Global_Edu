@@ -20,7 +20,7 @@ const markupUniversities = (universities) => {
   let markup = '';
 
   universities.forEach((university) => {
-    markup += ``;
+    markup += `<a href="${university['universities-href']}" target="_blank" class="uni-card">${university.university}</a>`;
     // Finish up markup
   });
   return markup;
@@ -28,15 +28,21 @@ const markupUniversities = (universities) => {
 
 const renderUniversitiesPopup = (e) => {
   const countryIndex = parseInt(e.target.parentElement.id.split('_')[1]);
-  const country = countriesList[countryIndex].name.toLowerCase();
-  const universities = unisList.filter((university) => university.country.toLowerCase() === country);
+  const country = countriesList[countryIndex];
+  const universities = unisList.filter((university) => university.country.toLowerCase() === country.name.toLowerCase());
 
   const universityModal = document.createElement('section');
   universityModal.classList.add('modal');
 
   universityModal.innerHTML = `<div class="popup-container">
-                                  ${markupUniversities(universities)}
+                                  <h1>The Schools in ${country.fullName || country.name} <br> that we represent are listed below:</h1>
+                                  <div class="uni-cards-container">
+                                    ${markupUniversities(universities)}
+                                  </div>
+
                                 </div>`
+  document.querySelector('header').classList.add('header-active')
+  document.querySelector('body').style.overflow = 'hidden'
   document.body.appendChild(universityModal)
 };
 
