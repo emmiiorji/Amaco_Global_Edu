@@ -1,7 +1,6 @@
 import '../css/style.css'
 import renderUniversities from './modules/universities.js'
 import interSectionObserver from './modules/animation.js'
-import universityPopup from './modules/universityPopup.js'
 import logoIcon from '../assets/img/amaco-logo1.jpg'
 import aboutIcon from '../assets/img/amaco-logo2.jpg'
 import aboutIntroIcon from '../assets/img/our-history.jpg'
@@ -11,7 +10,6 @@ import { countries } from 'countries-list'
 
 interSectionObserver()
 renderUniversities()
-universityPopup()
 
 const createImages = async () => {
 	const logo = document.createElement('img')
