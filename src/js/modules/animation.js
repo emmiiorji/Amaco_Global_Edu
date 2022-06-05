@@ -8,7 +8,8 @@ const interSectionObserver = () => {
 
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
-			if (!entry.isIntersecting) {
+			const modal = document.querySelector('.modal');
+			if (!entry.isIntersecting || modal) {
 				header.classList.add('header-active')
 			} else {
 				header.classList.remove('header-active')
