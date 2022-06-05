@@ -46,6 +46,14 @@ const renderUniversitiesPopup = (e) => {
   document.body.appendChild(universityModal)
 };
 
+const closeModal = () => {
+  const modal = document.querySelector('.modal');
+  if (modal) {
+    document.querySelector('body').removeChild(modal)
+    document.querySelector('body').style.overflow = 'auto'
+  }
+};
+
 {/* <section class="modal">
   <div class="popup-container">
     <div id="view-uni">
@@ -62,4 +70,4 @@ const renderUniversitiesPopup = (e) => {
 </section> */}
 
 
-export { markupCountries, renderUniversitiesPopup };
+export { markupCountries, renderUniversitiesPopup, closeModal };
