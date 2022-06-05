@@ -1,5 +1,5 @@
 import '../css/style.css'
-import renderUniversities from './modules/universities.js'
+import renderUniversities from './modules/universities.service.js'
 import interSectionObserver from './modules/animation.js'
 import logoIcon from '../assets/img/amaco-logo1.jpg'
 import aboutIcon from '../assets/img/amaco-logo2.jpg'
