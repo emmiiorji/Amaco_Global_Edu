@@ -1,17 +1,15 @@
-import './style.css'
-import renderUniversities from './universities'
-import interSectionObserver from './animation.js'
-import universityPopup from './universityPopup'
-import logoIcon from './assets/img/amaco-logo1.jpg'
-import aboutIcon from './assets/img/amaco-logo2.jpg'
-import aboutIntroIcon from './assets/img/our-history.jpg'
-import missionIcon from './assets/img/mission.jpg'
-import visionIcon from './assets/img/vision.jpg'
+import '../css/style.css'
+import renderUniversities from './modules/universities.service.js'
+import interSectionObserver from './modules/animation.js'
+import logoIcon from '../assets/img/amaco-logo1.jpg'
+import aboutIcon from '../assets/img/amaco-logo2.jpg'
+import aboutIntroIcon from '../assets/img/our-history.jpg'
+import missionIcon from '../assets/img/mission.jpg'
+import visionIcon from '../assets/img/vision.jpg'
 import { countries } from 'countries-list'
 
 interSectionObserver()
 renderUniversities()
-universityPopup()
 
 const createImages = async () => {
 	const logo = document.createElement('img')
@@ -46,31 +44,6 @@ function toggleMenu() {
 }
 
 toggleMenu()
-
-const openModal = () => {
-	const modalButtons = Array.from(document.querySelectorAll('.university'))
-	const modals = Array.from(document.querySelectorAll('.modal'))
-
-	const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]])
-
-	modalButtonZip.forEach(pair => {
-		pair[0].addEventListener('click', () => {
-			pair[1].style.display = 'block'
-		})
-	})
-}
-openModal()
-
-const closeModal = () => {
-	document.querySelectorAll('.cancel').forEach(close => {
-		close.addEventListener('click', () => {
-			document.querySelectorAll('.modal').forEach(modal => {
-				modal.style.display = 'none'
-			})
-		})
-	})
-}
-closeModal()
 
 const showHomePage = () => {
 	document.querySelectorAll('.section').forEach(section => {
