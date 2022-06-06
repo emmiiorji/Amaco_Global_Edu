@@ -7,6 +7,7 @@ import aboutIntroIcon from '../assets/img/our-history.jpg'
 import missionIcon from '../assets/img/mission.jpg'
 import visionIcon from '../assets/img/vision.jpg'
 import { countries } from 'countries-list'
+import { closeModal } from './modules/universities.controller.js'
 
 interSectionObserver()
 renderUniversities()
@@ -74,6 +75,7 @@ const navigatePages = () => {
 			const activeSection = document.querySelector(`.${list}`)
 			const navList = document.querySelectorAll('.list')
 			const activeList = document.querySelector(`#${list}`)
+			const modal = document.querySelector('.modal')
 
 			document.querySelectorAll('.section').forEach(section => {
 				section.style.display = 'none'
@@ -88,6 +90,7 @@ const navigatePages = () => {
 															'inset 200px 0px 200px 0px #000' : 'none'
 					overlay.style['box-shadow'] = boxShadow;
 					
+					if(modal) closeModal();
 				}
 			})
 		})
