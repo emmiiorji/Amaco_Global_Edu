@@ -940,6 +940,41 @@ const unisList = [
     'universities-href': 'http://nau.edu/',
     university: 'Northern Arizona University',
   },
+  {
+    country: 'China',
+    'universities-href': 'http://www.sjzu.edu.cn/',
+    university: 'Shenyang Jianzhu University',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://en.cpu.edu.cn/',
+    university: 'China Pharmaceutical University',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://en.zust.edu.cn/',
+    university: 'Zhenjiang University of Science and Technology',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://en.syphu.edu.cn/',
+    university: 'Shenyang Pharmaceutical University',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://eng.ujs.edu.cn/',
+    university: 'Jiangsu University',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://en.sau.edu.cn/',
+    university: 'Shenyang Aerospace University',
+  },
+  {
+    country: 'China',
+    'universities-href': 'https://sie.cust.edu.cn/',
+    university: 'Changchun University of Science and Technology',
+  },
 ];
 
 const countriesList = [
@@ -953,36 +988,41 @@ const countriesList = [
     img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/Canada_country_banner_ylczqi.jpg',
   },
   {
-    name: 'UK',
-    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/UK_country_banner_w51uel.jpg',
+    name: 'China',
+    img: 'https://res.cloudinary.com/emmii/image/upload/v1654615947/Amaco%20Global%20Education/China-Academic-Year-Study-Abroad-Programs_zbmghu.jpg',
   },
   {
     name: 'Australia',
     img: 'https://res.cloudinary.com/emmii/image/upload/v1653850201/Amaco%20Global%20Education/australia_country_banner_kkzgbc.jpg',
   },
   {
-    name: 'Ukraine',
-    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/Ukraine_country_banner_ar6hyx.jpg',
+    name: 'UK',
+    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/UK_country_banner_w51uel.jpg',
+    fullName: 'the United Kingdom',
   },
   {
-    name: 'Cyprus',
-    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849799/Amaco%20Global%20Education/cyprus_country_banner_gmaecn.jpg',
+    name: 'Ukraine',
+    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/Ukraine_country_banner_ar6hyx.jpg',
   },
   {
     name: 'Turkey',
     img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/turkey_country_banner_rbtekg.jpg',
   },
   {
+    name: 'Cyprus',
+    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849799/Amaco%20Global%20Education/cyprus_country_banner_gmaecn.jpg',
+  },
+  {
     name: 'Russia',
     img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/russia_country_banner_jspim5.jpg',
   },
   {
-    name: 'Schengen',
-    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849803/Amaco%20Global%20Education/schengen_country_banner_pbr67b.jpg',
-  },
-  {
     name: 'Germany',
     img: 'https://res.cloudinary.com/emmii/image/upload/v1653849800/Amaco%20Global%20Education/germany_country_banner_uohuq5.jpg',
+  },
+  {
+    name: 'Schengen',
+    img: 'https://res.cloudinary.com/emmii/image/upload/v1653849803/Amaco%20Global%20Education/schengen_country_banner_pbr67b.jpg',
   },
 ];
 
